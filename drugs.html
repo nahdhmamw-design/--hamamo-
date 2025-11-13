@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>قائمة الأدوية — HAMAMO</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="container">
+    <button id="menuBtn" class="icon-btn">☰</button>
+    <div class="brand">HAMAMO <span class="muted">| مكتبة الأدوية</span></div>
+    <div class="actions">
+      <button id="botBtn" class="icon-btn">💬</button>
+      <button id="cartOpen" class="icon-btn">🛒 <span id="cartCount">0</span></button>
+    </div>
+  </div>
+</header>
+
+<div class="container layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-inner">
+      <h3>التصنيفات</h3>
+      <ul id="categories"></ul>
+      <hr>
+      <h3>عربة التسوق</h3>
+      <div id="cart" class="cart-box"></div>
+      <div class="cart-actions">
+        <button id="checkoutBtn" class="btn">إتمام الطلب</button>
+        <button id="clearCart" class="btn ghost">تفريغ العربة</button>
+      </div>
+      <hr>
+      <button id="toggleTheme" class="btn ghost">تبديل الوضع</button>
+      <a class="link" href="bot.html">🔍 اذهب إلى البوت الذكي</a>
+      <a class="link" href="about.html">ℹ️ عن HAMAMO</a>
+      <a class="link" href="policy.html">📜 الشروط</a>
+    </div>
+  </aside>
+
+  <main class="content">
+    <div class="search-row">
+      <select id="ageFilter" class="select">
+        <option value="all">الكل</option>
+        <option value="child">أطفال</option>
+        <option value="teen">مراهقين</option>
+        <option value="adult">بالغين</option>
+      </select>
+      <input id="search" type="search" placeholder="ابحث عن دواء، مادة فعالة، أو عرض..." autocomplete="off">
+    </div>
+
+    <div id="drugsList" class="grid"></div>
+  </main>
+</div>
+
+<script src="js/drugs.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

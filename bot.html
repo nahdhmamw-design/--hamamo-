@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>البوت الذكي — HAMAMO</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="container">
+    <button id="menuBtn" class="icon-btn">☰</button>
+    <div class="brand">HAMAMO <span class="muted">| البوت الذكي</span></div>
+    <div class="actions">
+      <button id="cartOpen" class="icon-btn">🛒 <span id="cartCount">0</span></button>
+    </div>
+  </div>
+</header>
+
+<main class="container main-area">
+  <h2>🤖 البوت التفاعلي لمساعدة اختيار الدواء</h2>
+  <div id="botCard" class="card bot-card">
+    <p id="question"></p>
+    <div id="answers" class="answers"></div>
+  </div>
+  <div id="botResults" class="grid"></div>
+</main>
+
+<script src="js/bot.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
